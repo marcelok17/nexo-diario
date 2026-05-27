@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- PÁGINA PRINCIPAL -->
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>1.0</priority>
+        <news:news>
+            <news:publication>
+                <news:name>NEXO DIARIO</news:name>
+                <news:language>es</news:language>
+            </news:publication>
+            <news:publication_date>2026-05-27T19:30:00-03:00</news:publication_date>
+            <news:title>NEXO DIARIO | Últimas Noticias de Chile y el Mundo</news:title>
+            <news:keywords>noticias chile, últimas noticias, información en vivo</news:keywords>
+        </news:news>
+        <image:image>
+            <image:loc>https://d8j0ntlcm91z4.cloudfront.net/user_3EBplsX1rWkSXdSLXhPd3IiBnPf/hf_20260527_192416_8dfcf865-432b-4329-8243-41a6e836278d.jpeg</image:loc>
+            <image:title>Logo NEXO DIARIO</image:title>
+        </image:image>
+    </url>
+    
+    <!-- CATEGORÍAS PRINCIPALES -->
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/politica/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/economia/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/tecnologia/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/mundo/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/deportes/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/categoria/cultura/</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- PÁGINAS LEGALES Y SUPPORT -->
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/politica-editorial/</loc>
+        <lastmod>2026-05-27T00:00:00-03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/privacidad/</loc>
+        <lastmod>2026-05-27T00:00:00-03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/terminos/</loc>
+        <lastmod>2026-05-27T00:00:00-03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/contacto/</loc>
+        <lastmod>2026-05-27T00:00:00-03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- RSS FEED -->
+    <url>
+        <loc>https://heroic-baklava-41385d.netlify.app/rss.xml</loc>
+        <lastmod>2026-05-27T19:30:00-03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>
