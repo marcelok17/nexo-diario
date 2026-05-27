@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO -->
+    <title>NEXO DIARIO | Noticias de Chile y el Mundo en Vivo</title>
+    <meta name="description" content="NEXO DIARIO: Noticias de Chile y el mundo. Información verificada, análisis en profundidad, cobertura de eventos nacionales e internacionales.">
+    <meta name="keywords" content="noticias Chile, últimas noticias, noticias en vivo">
+    <meta name="author" content="NEXO DIARIO">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="NEXO DIARIO | Noticias de Chile y el Mundo">
+    <meta property="og:description" content="Información verificada en vivo">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #1d1d1f;
+            --secondary: #f5f5f7;
+            --accent-red: #E31E24;
+            --accent-blue: #003DA5;
+            --text: #1d1d1f;
+            --text-light: #666666;
+            --border: #e5e5e7;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #1d1d1f;
+                --secondary: #2d2d2d;
+                --text: #f5f5f7;
+                --text-light: #a1a1a6;
+                --border: #424245;
+            }
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, rgba(227, 30, 36, 0.08) 0%, rgba(0, 61, 165, 0.08) 100%);
+            border-bottom: 3px solid var(--accent-red);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .logo-container {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-blue) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 8px 16px rgba(227, 30, 36, 0.2);
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin: 10px 0;
+        }
+        
+        /* MAIN */
+        main {
+            padding: 50px 20px;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .article {
+            background: var(--secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .article-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-red));
+        }
+        
+        .article-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-category {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-red);
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        
+        .article h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--text);
+        }
+        
+        .article h2 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .article h2 a:hover {
+            color: var(--accent-red);
+        }
+        
+        .article-summary {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .article-source {
+            font-weight: 600;
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .article-source:hover {
+            color: var(--accent-red);
+            text-decoration: underline;
+        }
+        
+        .article-time {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--secondary);
+            border-top: 1px solid var(--border);
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--text-light);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-red);
+        }
+        
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 20px;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                padding: 35px 20px;
+            }
+            
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo {
+                width: 70px;
+                height: 70px;
+                font-size: 36px;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">⬥</div>
+            </div>
+            <h1>NEXO DIARIO</h1>
+            <p>Noticias de Chile y el Mundo | Información Verificada en Vivo</p>
+            <p style="font-size: 0.9rem; margin-top: 15px;" id="updateTime">Última actualización: Cargando...</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="articles-grid" id="articlesContainer"></div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://www.clarin.com" target="_blank" rel="noopener noreferrer">Clarín</a>
+                <a href="https://www.infobae.com" target="_blank" rel="noopener noreferrer">Infobae</a>
+                <a href="https://www.latercera.com" target="_blank" rel="noopener noreferrer">La Tercera</a>
+                <a href="https://www.emol.com" target="_blank" rel="noopener noreferrer">Emol</a>
+                <a href="https://www.elmercurio.com" target="_blank" rel="noopener noreferrer">El Mercurio</a>
+                <a href="/rss.xml">RSS Feed</a>
+            </div>
+            <p class="copyright">© 2026 NEXO DIARIO. Noticias verificadas de Chile y el mundo.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const articles = [
+            {
+                title: "Chile anuncia nuevo plan de seguridad integral para 2026",
+                summary: "El gobierno presenta estrategia multisectorial contra delincuencia con inversión en tecnología y policía comunitaria en regiones críticas.",
+                category: "POLÍTICA",
+                source: "Agencia AFP Chile",
+                sourceUrl: "https://www.afp.com/es",
+                time: "Hace 2 horas",
+                image: "https://images.unsplash.com/photo-1600859062241-98e5dba7214f?w=800&h=400&fit=crop",
+                url: "https://www.clarin.com"
+            },
+            {
+                title: "Economía global registra crecimiento de 3.2% en Q1 2026",
+                summary: "Organización para Cooperación y Desarrollo Económico reporta recuperación en comercio internacional con América Latina como región emergente.",
+                category: "ECONOMÍA",
+                source: "OCDE",
+                sourceUrl: "https://www.oecd.org/es/",
+                time: "Hace 4 horas",
+                image: "https://images.unsplash.com/photo-1579621970563-430f63602022?w=800&h=400&fit=crop",
+                url: "https://www.infobae.com/economia/"
+            },
+            {
+                title: "Glaciares de los Andes pierden 30% de su masa en última década",
+                summary: "Estudio científico advierte sobre aceleración del deshielo en glaciares chilenos y sus implicaciones para recursos hídricos.",
+                category: "MEDIO AMBIENTE",
+                source: "Centro de Ciencia del Clima",
+                sourceUrl: "https://science.nasa.gov/",
+                time: "Hace 6 horas",
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop",
+                url: "https://www.latercera.com/mundo/"
+            },
+            {
+                title: "Startups chilenas lideran innovación con inteligencia artificial",
+                summary: "Empresas de tecnología nacional reciben inversión récord para desarrollar soluciones de IA en sectores minería, agricultura y educación.",
+                category: "TECNOLOGÍA",
+                source: "StartupChile",
+                sourceUrl: "https://www.startupchile.org/",
+                time: "Hace 8 horas",
+                image: "https://images.unsplash.com/photo-1677442d019cecf74d13148ef1b659f5a3eb3cb46?w=800&h=400&fit=crop",
+                url: "https://www.emol.com/tecnologia/"
+            },
+            {
+                title: "Selección de fútbol de Chile vence 2-1 en amistoso internacional",
+                summary: "La roja domina partido ante combinado europeo en Estadio Nacional. Equipo técnico evalúa rendimiento a pocos meses de copa regional.",
+                category: "DEPORTES",
+                source: "Federación Nacional de Fútbol",
+                sourceUrl: "https://www.anfp.cl/",
+                time: "Hace 10 horas",
+                image: "https://images.unsplash.com/photo-1516150873529-3f34a0c1f1d8?w=800&h=400&fit=crop",
+                url: "https://www.elmercurio.com/deportes/"
+            },
+            {
+                title: "Museo digital de arte latinoamericano accesible para todo público",
+                summary: "Plataforma en línea permite acceso gratuito a colecciones de artistas contemporáneos de toda América Latina. Iniciativa cultural impulsada por gobiernos.",
+                category: "CULTURA",
+                source: "Ministerio de Culturas",
+                sourceUrl: "https://www.cultura.gob.cl/",
+                time: "Hace 12 horas",
+                image: "https://images.unsplash.com/photo-1561214115-6d2f1b0609fa?w=800&h=400&fit=crop",
+                url: "https://www.clarin.com/cultura/"
+            }
+        ];
+        
+        function renderArticles() {
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = articles.map(article => `
+                <article class="article">
+                    <a href="${article.url}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <img src="${article.image}" alt="${article.title}" class="article-img" loading="lazy">
+                        <div class="article-content">
+                            <span class="article-category">${article.category}</span>
+                            <h2>${article.title}</h2>
+                            <p class="article-summary">${article.summary}</p>
+                            <div class="article-footer">
+                                <a href="${article.sourceUrl}" target="_blank" rel="noopener noreferrer" class="article-source">${article.source}</a>
+                                <span class="article-time">${article.time}</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            `).join('');
+        }
+        
+        function updateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZone: 'America/Santiago'
+            };
+            const formatted = now.toLocaleDateString('es-CL', options);
+            document.getElementById('updateTime').textContent = `Última actualización: ${formatted}`;
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            renderArticles();
+            updateTime();
+            setInterval(updateTime, 60000);
+        });
+    </script>
+</body>
+</html>
