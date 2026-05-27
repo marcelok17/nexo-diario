@@ -1,0 +1,70 @@
+# NEXO DIARIO - SEO ROBOTS.TXT
+# Optimizado para crawlers de buscadores y motores de noticias
+
+# GOOGLE (Default)
+User-agent: Googlebot
+Allow: /
+Allow: /categoria/
+Allow: /rss.xml
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# Google News Bot
+User-agent: GoogleNews
+Allow: /
+Allow: /categoria/
+Allow: /rss.xml
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Allow: /categoria/
+Allow: /rss.xml
+Disallow: /admin/
+Disallow: /private/
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Allow: /rss.xml
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Allow: /rss.xml
+
+# Baidu (China - optional)
+User-agent: Baiduspider
+Allow: /
+Allow: /rss.xml
+
+# Todos los demás bots
+User-agent: *
+Allow: /
+Allow: /categoria/
+Allow: /rss.xml
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# CRAWL DELAY
+# (Opcional - ajustar según recursos de servidor)
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# SITEMAP
+Sitemap: https://heroic-baklava-41385d.netlify.app/sitemap.xml
+Sitemap: https://heroic-baklava-41385d.netlify.app/rss.xml
+
+# COMENTARIOS PARA MANTENIMIENTO
+# Última actualización: 2026-05-27
+# Lenguaje: Español
+# País: Chile
+# Tipo: Agregador de Noticias
