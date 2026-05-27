@@ -1,0 +1,9 @@
+run = "npm start"
+language = "nodejs"
+
+[nix]
+channel = "stable-21_11"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
