@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+     xmlns:media="http://search.yahoo.com/mrss/">
+     
+    <channel>
+        <!-- INFORMACIÓN DEL CANAL -->
+        <title>NEXO DIARIO - Noticias de Chile y el Mundo</title>
+        <link>https://heroic-baklava-41385d.netlify.app/</link>
+        <description>Últimas noticias de Chile y el mundo. Información verificada, análisis en profundidad y cobertura de eventos nacionales e internacionales.</description>
+        <language>es-cl</language>
+        <lastBuildDate>Wed, 27 May 2026 19:30:00 -0300</lastBuildDate>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <ttl>60</ttl>
+        
+        <!-- METADATOS DEL CANAL -->
+        <image>
+            <url>https://d8j0ntlcm91z4.cloudfront.net/user_3EBplsX1rWkSXdSLXhPd3IiBnPf/hf_20260527_192416_8dfcf865-432b-4329-8243-41a6e836278d.jpeg</url>
+            <title>NEXO DIARIO - Noticias de Chile y el Mundo</title>
+            <link>https://heroic-baklava-41385d.netlify.app/</link>
+            <width>896</width>
+            <height>1200</height>
+        </image>
+        
+        <!-- ARTÍCULOS -->
+        <item>
+            <title>Chile endurecerá medidas de seguridad ante nueva ola delictiva</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/seguridad-chile-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-001</guid>
+            <pubDate>Wed, 27 May 2026 18:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Política</category>
+            <comments>https://heroic-baklava-41385d.netlify.app/articulo/seguridad-chile-2026-05-27/#comments</comments>
+            <description>&lt;![CDATA[
+                El gobierno anuncia plan integral de seguridad para enfrentar aumento de delincuencia en zonas metropolitanas. Se invertirán recursos en policía comunitaria y tecnología de vigilancia.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;El gobierno anuncia plan integral de seguridad para enfrentar aumento de delincuencia en zonas metropolitanas. Se invertirán recursos en policía comunitaria y tecnología de vigilancia.&lt;/p&gt;
+                &lt;p&gt;Las autoridades han identificado zonas críticas en la región metropolitana donde se concentra la mayor parte de la delincuencia.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200" />
+            <media:content url="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200" type="image/jpeg">
+                <media:description>Imagen ilustrativa de seguridad</media:description>
+            </media:content>
+        </item>
+        
+        <item>
+            <title>Economía global se recupera: PIB de América Latina crece 3.2%</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/economia-latinoamerica-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-002</guid>
+            <pubDate>Wed, 27 May 2026 16:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Economía</category>
+            <description>&lt;![CDATA[
+                Organismos internacionales reportan recuperación económica en región. Comercio y inversión extranjera lideran el crecimiento trimestral.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;Organismos internacionales reportan recuperación económica en región. Comercio y inversión extranjera lideran el crecimiento trimestral.&lt;/p&gt;
+                &lt;p&gt;El Banco Central reporta que Chile lidera la recuperación con un crecimiento del 4.1% anual.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1526304640581-d334cdbbf92f?w=1200" />
+        </item>
+        
+        <item>
+            <title>Cambio climático acelera deshielo en glaciares de los Andes</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/cambio-climatico-andes-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-003</guid>
+            <pubDate>Wed, 27 May 2026 14:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Medio Ambiente</category>
+            <description>&lt;![CDATA[
+                Científicos advierten sobre impacto acelerado del calentamiento global en glaciares chilenos. Pérdida de agua dulce amenaza recursos hídricos.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;Científicos advierten sobre impacto acelerado del calentamiento global en glaciares chilenos. Pérdida de agua dulce amenaza recursos hídricos.&lt;/p&gt;
+                &lt;p&gt;Estudios del IPCC indican que los glaciares de la cordillera de los Andes podrían desaparecer en los próximos 30 años.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1470114716159-e389f8712fda?w=1200" />
+        </item>
+        
+        <item>
+            <title>Inteligencia Artificial revoluciona sector tecnológico chileno</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/ia-tecnologia-chile-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-004</guid>
+            <pubDate>Wed, 27 May 2026 12:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Tecnología</category>
+            <description>&lt;![CDATA[
+                Startups nacionales invierten en soluciones de IA para optimizar procesos. Gobierno crea programa de incentivos para innovación tecnológica.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;Startups nacionales invierten en soluciones de IA para optimizar procesos. Gobierno crea programa de incentivos para innovación tecnológica.&lt;/p&gt;
+                &lt;p&gt;StartupChile anunció un fondo de $50 millones para proyectos de IA y machine learning.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1677442d019cecf74d13148ef1b659f5a3eb3cb46?w=1200" />
+        </item>
+        
+        <item>
+            <title>Fútbol: Chile gana amistoso internacional en preparación para Copa</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/futbol-chile-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-005</guid>
+            <pubDate>Wed, 27 May 2026 10:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Deportes</category>
+            <description>&lt;![CDATA[
+                La selección nacional derrota equipo visitante 2-1 en Estadio Nacional. Equipo técnico evalúa rendimiento ante próximas compromisos.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;La selección nacional derrota equipo visitante 2-1 en Estadio Nacional. Equipo técnico evalúa rendimiento ante próximas compromisos.&lt;/p&gt;
+                &lt;p&gt;Bielsa destacó el desempeño del equipo en los primeros 45 minutos del encuentro.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1579952363873-27f3bade9e55?w=1200" />
+        </item>
+        
+        <item>
+            <title>Cultura: Nuevo museo digital de arte latinoamericano abre sus puertas</title>
+            <link>https://heroic-baklava-41385d.netlify.app/articulo/museo-digital-cultura-2026-05-27/</link>
+            <guid isPermaLink="false">nexo-diario-006</guid>
+            <pubDate>Wed, 27 May 2026 08:00:00 -0300</pubDate>
+            <dc:creator>NEXO DIARIO</dc:creator>
+            <category>Cultura</category>
+            <description>&lt;![CDATA[
+                Plataforma digital permite acceso gratuito a obras de artistas de toda América Latina. Iniciativa busca democratizar acceso a la cultura.
+            ]]&gt;</description>
+            <content:encoded>&lt;![CDATA[
+                &lt;p&gt;Plataforma digital permite acceso gratuito a obras de artistas de toda América Latina. Iniciativa busca democratizar acceso a la cultura.&lt;/p&gt;
+                &lt;p&gt;El Ministerio de las Culturas presentó una colección de más de 10,000 obras de artistas latinoamericanos.&lt;/p&gt;
+            ]]&gt;</content:encoded>
+            <media:thumbnail url="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200" />
+        </item>
+    </channel>
+</rss>
