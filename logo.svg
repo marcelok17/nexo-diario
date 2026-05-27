@@ -1,103 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-    <!-- Fondo -->
-    <rect width="1200" height="1200" fill="#ffffff"/>
-    
-    <!-- Definiciones de gradientes -->
-    <defs>
-        <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#E31E24;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#B01820;stop-opacity:1" />
-        </linearGradient>
-        
-        <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#003DA5;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#001F5C;stop-opacity:1" />
-        </linearGradient>
-        
-        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
-        </filter>
-    </defs>
-    
-    <!-- Círculos decorativos de fondo (muy sutiles) -->
-    <circle cx="200" cy="200" r="150" fill="#E31E24" opacity="0.05"/>
-    <circle cx="1000" cy="1000" r="200" fill="#003DA5" opacity="0.05"/>
-    
-    <!-- SÍMBOLO SUPERIOR - Líneas dinámicas Rojo -->
-    <g id="redFlow" filter="url(#shadow)">
-        <!-- Línea superior principal -->
-        <path d="M 250 350 Q 400 320 550 340 T 850 360" stroke="#E31E24" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        
-        <!-- Línea segunda nivel -->
-        <path d="M 200 450 Q 400 430 600 450 T 950 470" stroke="#E31E24" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
-        
-        <!-- Círculos de conexión roja superior -->
-        <circle cx="250" cy="350" r="20" fill="#E31E24"/>
-        <circle cx="400" cy="320" r="18" fill="#E31E24" opacity="0.9"/>
-        <circle cx="550" cy="340" r="16" fill="#E31E24" opacity="0.8"/>
-        <circle cx="700" cy="360" r="18" fill="#E31E24" opacity="0.9"/>
-        <circle cx="850" cy="360" r="20" fill="#E31E24"/>
-    </g>
-    
-    <!-- SÍMBOLO CENTRAL - Núcleo de conexión -->
-    <g id="core" filter="url(#shadow)">
-        <!-- Círculo exterior grande -->
-        <circle cx="600" cy="600" r="90" fill="none" stroke="url(#redGradient)" stroke-width="6"/>
-        
-        <!-- Círculo medio -->
-        <circle cx="600" cy="600" r="65" fill="none" stroke="url(#blueGradient)" stroke-width="5"/>
-        
-        <!-- Círculo interior -->
-        <circle cx="600" cy="600" r="40" fill="none" stroke="#E31E24" stroke-width="4"/>
-        
-        <!-- Punto central -->
-        <circle cx="600" cy="600" r="16" fill="url(#redGradient)"/>
-        
-        <!-- Líneas radiales sutiles -->
-        <line x1="600" y1="520" x2="600" y2="480" stroke="#E31E24" stroke-width="2" opacity="0.6"/>
-        <line x1="680" y1="600" x2="720" y2="600" stroke="#003DA5" stroke-width="2" opacity="0.6"/>
-        <line x1="600" y1="680" x2="600" y2="720" stroke="#E31E24" stroke-width="2" opacity="0.6"/>
-        <line x1="520" y1="600" x2="480" y2="600" stroke="#003DA5" stroke-width="2" opacity="0.6"/>
-    </g>
-    
-    <!-- SÍMBOLO INFERIOR - Líneas dinámicas Azul -->
-    <g id="blueFlow" filter="url(#shadow)">
-        <!-- Línea inferior primera -->
-        <path d="M 200 750 Q 400 770 600 750 T 950 730" stroke="#003DA5" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
-        
-        <!-- Línea principal inferior -->
-        <path d="M 300 850 Q 450 880 600 860 T 850 840" stroke="#003DA5" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        
-        <!-- Círculos de conexión azul inferior -->
-        <circle cx="200" cy="750" r="18" fill="#003DA5" opacity="0.9"/>
-        <circle cx="350" cy="770" r="16" fill="#003DA5" opacity="0.8"/>
-        <circle cx="500" cy="760" r="18" fill="#003DA5" opacity="0.9"/>
-        <circle cx="700" cy="840" r="18" fill="#003DA5" opacity="0.9"/>
-        <circle cx="850" cy="840" r="20" fill="#003DA5"/>
-    </g>
-    
-    <!-- TEXTOS -->
-    <g id="text">
-        <!-- NEXO - Texto principal -->
-        <text x="600" y="1020" font-family="Helvetica, Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#1d1d1f" letter-spacing="8">
-            NEXO
-        </text>
-        
-        <!-- DIARIO - Subtítulo -->
-        <text x="600" y="1110" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="600" text-anchor="middle" fill="#E31E24" letter-spacing="4">
-            DIARIO
-        </text>
-        
-        <!-- Línea decorativa -->
-        <line x1="300" y1="1140" x2="900" y2="1140" stroke="#003DA5" stroke-width="3" stroke-linecap="round"/>
-    </g>
-    
-    <!-- Pequeños detalles decorativos -->
-    <g id="accents" opacity="0.3">
-        <circle cx="150" cy="300" r="8" fill="#E31E24"/>
-        <circle cx="1050" cy="400" r="6" fill="#003DA5"/>
-        <circle cx="100" cy="900" r="7" fill="#003DA5"/>
-        <circle cx="1100" cy="800" r="6" fill="#E31E24"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Logo NEXO DIARIO - Profesional con fondo transparente -->
+  
+  <!-- Círculo exterior con gradiente -->
+  <defs>
+    <linearGradient id="gradientNexo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E31E24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003DA5;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo blanco opcional (comentado, descomentar si necesitas) -->
+  <!-- <rect width="200" height="200" fill="white"/> -->
+  
+  <!-- Círculo principal con gradiente -->
+  <circle cx="100" cy="100" r="85" fill="url(#gradientNexo)" filter="url(#shadow)"/>
+  
+  <!-- Símbolo de periódico/nexo: líneas entrecruzadas formando "X" + líneas horizontales -->
+  
+  <!-- Línea diagonal 1 (de arriba-izquierda a abajo-derecha) -->
+  <line x1="50" y1="70" x2="150" y2="130" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Línea diagonal 2 (de arriba-derecha a abajo-izquierda) -->
+  <line x1="150" y1="70" x2="50" y2="130" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Línea horizontal superior -->
+  <line x1="60" y1="55" x2="140" y2="55" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Línea horizontal inferior -->
+  <line x1="60" y1="145" x2="140" y2="145" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Punto central (nexo/conexión) -->
+  <circle cx="100" cy="100" r="8" fill="white"/>
+  
+  <!-- Puntos en las esquinas del X -->
+  <circle cx="50" cy="70" r="5" fill="white" opacity="0.8"/>
+  <circle cx="150" cy="70" r="5" fill="white" opacity="0.8"/>
+  <circle cx="50" cy="130" r="5" fill="white" opacity="0.8"/>
+  <circle cx="150" cy="130" r="5" fill="white" opacity="0.8"/>
 </svg>
