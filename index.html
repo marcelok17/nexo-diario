@@ -24,8 +24,10 @@
         }
         
         :root {
-            --primary: #1d1d1f;
+            --primary: #ffffff;
+            --primary-dark: #1d1d1f;
             --secondary: #f5f5f7;
+            --secondary-dark: #2d2d2d;
             --accent-red: #E31E24;
             --accent-blue: #003DA5;
             --text: #1d1d1f;
@@ -58,9 +60,9 @@
         
         /* HEADER */
         header {
-            background: linear-gradient(135deg, rgba(227, 30, 36, 0.08) 0%, rgba(0, 61, 165, 0.08) 100%);
+            background: linear-gradient(135deg, rgba(227, 30, 36, 0.05) 0%, rgba(0, 61, 165, 0.05) 100%);
             border-bottom: 3px solid var(--accent-red);
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         
@@ -72,28 +74,42 @@
         }
         
         .logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-blue) 100%);
-            border-radius: 16px;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
-            box-shadow: 0 8px 16px rgba(227, 30, 36, 0.2);
+            box-shadow: 0 10px 30px rgba(227, 30, 36, 0.15);
+            padding: 15px;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .logo {
+                background: var(--secondary-dark);
+            }
+        }
+        
+        .logo svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
         }
         
         header h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             margin-bottom: 15px;
             letter-spacing: -1px;
+            background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         header p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--text-light);
             margin: 10px 0;
         }
@@ -105,29 +121,31 @@
         
         .articles-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
             margin-bottom: 40px;
         }
         
         .article {
             background: var(--secondary);
-            border-radius: 12px;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             display: flex;
             flex-direction: column;
+            border: 1px solid var(--border);
         }
         
         .article:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(227, 30, 36, 0.15);
+            border-color: var(--accent-red);
         }
         
         .article-img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
             background: linear-gradient(135deg, var(--accent-blue), var(--accent-red));
         }
@@ -141,17 +159,20 @@
         
         .article-category {
             display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 700;
+            font-size: 0.7rem;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
             color: var(--accent-red);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             width: fit-content;
+            padding: 4px 8px;
+            background: rgba(227, 30, 36, 0.08);
+            border-radius: 4px;
         }
         
         .article h2 {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 12px;
             line-height: 1.4;
@@ -189,7 +210,7 @@
             color: var(--accent-blue);
             text-decoration: none;
             transition: color 0.3s ease;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .article-source:hover {
@@ -214,7 +235,7 @@
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
@@ -224,6 +245,7 @@
             text-decoration: none;
             font-size: 0.9rem;
             transition: color 0.3s ease;
+            font-weight: 500;
         }
         
         .footer-links a:hover {
@@ -239,17 +261,16 @@
         /* RESPONSIVE */
         @media (max-width: 768px) {
             header {
-                padding: 35px 20px;
+                padding: 30px 20px;
             }
             
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .logo {
-                width: 70px;
-                height: 70px;
-                font-size: 36px;
+                width: 80px;
+                height: 80px;
             }
             
             .articles-grid {
@@ -262,7 +283,29 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <div class="logo">⬥</div>
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+                        <defs>
+                            <linearGradient id="gradientNexo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#E31E24;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#003DA5;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+                            </filter>
+                        </defs>
+                        <circle cx="100" cy="100" r="90" fill="url(#gradientNexo)" filter="url(#shadow)"/>
+                        <line x1="50" y1="70" x2="150" y2="130" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="150" y1="70" x2="50" y2="130" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="60" y1="55" x2="140" y2="55" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="60" y1="145" x2="140" y2="145" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="100" cy="100" r="10" fill="white"/>
+                        <circle cx="50" cy="70" r="6" fill="white" opacity="0.8"/>
+                        <circle cx="150" cy="70" r="6" fill="white" opacity="0.8"/>
+                        <circle cx="50" cy="130" r="6" fill="white" opacity="0.8"/>
+                        <circle cx="150" cy="130" r="6" fill="white" opacity="0.8"/>
+                    </svg>
+                </div>
             </div>
             <h1>NEXO DIARIO</h1>
             <p>Noticias de Chile y el Mundo | Información Verificada en Vivo</p>
